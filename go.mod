@@ -1,9 +1,10 @@
-module github.com/cloudquery/license
+module github.com/cloudquery/licenser
 
 go 1.23.0
 
 require (
 	github.com/google/go-licenses v1.6.0
+	github.com/spf13/cobra v1.6.0
 	golang.org/x/sync v0.9.0
 )
 
@@ -18,7 +19,6 @@ require (
 	github.com/mitchellh/go-homedir v1.1.0 // indirect
 	github.com/otiai10/copy v1.6.0 // indirect
 	github.com/sergi/go-diff v1.2.0 // indirect
-	github.com/spf13/cobra v1.6.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/src-d/gcfg v1.4.0 // indirect
 	github.com/xanzy/ssh-agent v0.2.1 // indirect
