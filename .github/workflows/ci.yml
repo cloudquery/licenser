@@ -26,14 +26,5 @@ jobs:
         with:
           go-version-file: go.mod
 
-      - name: Install Go tools
-        run: go mod tidy
-
-      - name: Run Check
-        run: go run . check .
-
-      - name: Run Report
-        run: go run . report .
-
-      - name: Assert Report Created
-        run: test -f docs/_licenses.md
+      - name: Run Test
+        run: go install github.com/google/go-licenses/v2 && go test ./...
