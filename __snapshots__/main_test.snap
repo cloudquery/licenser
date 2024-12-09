@@ -1,0 +1,14 @@
+
+[TestReport - 1]
+/-/-/-/
+hub-title: Licenses
+/-/-/-/
+
+The following tools / packages are used in this plugin:
+
+| Name | License |
+|------|---------|
+| github.com/spf13/cobra | Apache-2.0 |
+| github.com/spf13/pflag | BSD-3-Clause |
+| golang.org/x/sync/errgroup | BSD-3-Clause |
+---

@@ -67,6 +67,9 @@ func generateLicensesReport(dir string) error {
 		return err
 	}
 
+	if err := os.MkdirAll("docs", 0755); err != nil {
+		return err
+	}
 	file, err := os.Create("docs/_licenses.md")
 	if err != nil {
 		return err
@@ -95,7 +98,7 @@ func findGoModDirs(rootDir string) ([]string, error) {
 	return dirs, nil
 }
 
-func main() {
+func rootCmd() *cobra.Command {
 	g := new(errgroup.Group)
 	g.SetLimit(10)
 
@@ -171,5 +174,12 @@ func main() {
 	cmd.AddCommand(checkCmd)
 	cmd.AddCommand(reportCmd)
 
-	cmd.Execute()
+	return &cmd
+}
+
+func main() {
+	cmd := rootCmd()
+	if err := cmd.Execute(); err != nil {
+		log.Fatalf("Error executing command: %v\n", err)
+	}
 }
