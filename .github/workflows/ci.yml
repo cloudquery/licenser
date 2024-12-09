@@ -25,7 +25,9 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version-file: go.mod
-        id: go
+
+      - name: Install Go tools
+        run: go mod tidy
 
       - name: Run Check
         run: go run . check .
