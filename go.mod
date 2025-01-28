@@ -5,7 +5,7 @@ go 1.23.0
 require (
 	github.com/gkampitakis/go-snaps v0.5.8
 	github.com/google/go-licenses/v2 v2.0.0-alpha.1
-	github.com/spf13/cobra v1.7.0
+	github.com/spf13/cobra v1.8.1
 	github.com/stretchr/testify v1.8.1
 	golang.org/x/sync v0.10.0
 )
