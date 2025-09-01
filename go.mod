@@ -3,7 +3,7 @@ module github.com/cloudquery/licenser
 go 1.24.4
 
 require (
-	github.com/gkampitakis/go-snaps v0.5.13
+	github.com/gkampitakis/go-snaps v0.5.14
 	github.com/google/go-licenses/v2 v2.0.0-alpha.1
 	github.com/spf13/cobra v1.9.1
 	github.com/stretchr/testify v1.11.0
