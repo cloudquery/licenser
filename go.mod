@@ -1,6 +1,6 @@
 module github.com/cloudquery/licenser
 
-go 1.24.4
+go 1.25.1
 
 require (
 	github.com/gkampitakis/go-snaps v0.5.15
